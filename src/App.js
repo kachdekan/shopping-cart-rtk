@@ -14,7 +14,7 @@ function App() {
     dispatch(calculateTotals());
   }, [cartItems, dispatch]);
   useEffect(() => {
-    dispatch(getCartItems());
+    dispatch(getCartItems('random'));
   }, [dispatch]);
 
   if (isLoading) {
